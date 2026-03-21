@@ -7,7 +7,7 @@ RUN pip install --no-cache-dir build && python -m build
 FROM python:3.12-slim
 
 LABEL maintainer="ssan" \
-      org.opencontainers.image.source="https://github.com/ssan/metrics-forge" \
+      org.opencontainers.image.source="https://github.com/SanjaySundarMurthy/metrics-forge" \
       org.opencontainers.image.description="metrics-forge - DevOps CLI Tool"
 
 RUN groupadd -r appuser && useradd -r -g appuser appuser
