@@ -1,10 +1,12 @@
 """Tests for analyzers."""
 
-from metrics_forge.analyzers.rule_generator import generate_rules
 from metrics_forge.analyzers.dashboard_generator import generate_dashboards
-from metrics_forge.analyzers.rule_validator import validate_rules, VALIDATION_RULES
+from metrics_forge.analyzers.rule_generator import generate_rules
+from metrics_forge.analyzers.rule_validator import VALIDATION_RULES, validate_rules
 from metrics_forge.models import (
-    AlertRule, AlertGroup, AlertSeverity, ServiceTier,
+    AlertGroup,
+    AlertRule,
+    AlertSeverity,
 )
 
 

@@ -1,8 +1,11 @@
 """Rule validator — validates generated and existing Prometheus rules."""
 
 from ..models import (
-    AlertRule, AlertGroup, AlertSeverity,
-    RuleIssue, ValidationResult,
+    AlertGroup,
+    AlertRule,
+    AlertSeverity,
+    RuleIssue,
+    ValidationResult,
 )
 
 VALIDATION_RULES = {

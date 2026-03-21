@@ -17,13 +17,6 @@ class AlertSeverity(Enum):
     INFO = "info"
 
 
-class MetricType(Enum):
-    COUNTER = "counter"
-    GAUGE = "gauge"
-    HISTOGRAM = "histogram"
-    SUMMARY = "summary"
-
-
 class SLOType(Enum):
     AVAILABILITY = "availability"
     LATENCY = "latency"

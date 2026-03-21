@@ -1,6 +1,7 @@
 """Demo project generator for metrics-forge."""
 
 from pathlib import Path
+
 import yaml
 
 

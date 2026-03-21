@@ -1,9 +1,15 @@
 """Shared fixtures for metrics-forge tests."""
 
 import pytest
+
 from metrics_forge.models import (
-    ServiceDefinition, ServiceTier, SLOSpec, SLOType,
-    AlertRule, AlertGroup, AlertSeverity, GrafanaPanel, PanelType,
+    AlertGroup,
+    AlertRule,
+    AlertSeverity,
+    ServiceDefinition,
+    ServiceTier,
+    SLOSpec,
+    SLOType,
 )
 
 

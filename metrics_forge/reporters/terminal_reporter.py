@@ -1,11 +1,11 @@
 """Rich terminal reporter for metrics-forge."""
 
 from rich.console import Console
-from rich.table import Table
 from rich.panel import Panel
+from rich.table import Table
 from rich.text import Text
 
-from ..models import ForgeOutput, AlertSeverity, ValidationResult
+from ..models import ForgeOutput, ValidationResult
 
 console = Console()
 
@@ -15,15 +15,15 @@ def print_forge_output(output: ForgeOutput) -> None:
     console.print()
     header = Text()
     header.append("Metrics Forge Output\n", style="bold")
-    header.append(f"Services: ", style="dim")
+    header.append("Services: ", style="dim")
     header.append(f"{output.services_processed}\n", style="bold")
-    header.append(f"Alert Groups: ", style="dim")
+    header.append("Alert Groups: ", style="dim")
     header.append(f"{len(output.alert_groups)}\n", style="bold")
-    header.append(f"Total Rules: ", style="dim")
+    header.append("Total Rules: ", style="dim")
     header.append(f"{output.total_rules}\n", style="bold cyan")
-    header.append(f"Dashboards: ", style="dim")
+    header.append("Dashboards: ", style="dim")
     header.append(f"{len(output.dashboards)}\n", style="bold")
-    header.append(f"Total Panels: ", style="dim")
+    header.append("Total Panels: ", style="dim")
     header.append(f"{output.total_panels}", style="bold cyan")
 
     console.print(Panel(header, title="[bold]metrics-forge[/bold]", border_style="blue"))

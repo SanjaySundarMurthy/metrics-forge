@@ -1,10 +1,16 @@
 """Tests for domain models."""
 
 from metrics_forge.models import (
-    ServiceDefinition, ServiceTier, SLOSpec, SLOType,
-    AlertRule, AlertGroup, AlertSeverity,
-    GrafanaPanel, GrafanaDashboard, PanelType,
-    ForgeOutput, ValidationResult, RuleIssue,
+    AlertRule,
+    AlertSeverity,
+    ForgeOutput,
+    GrafanaDashboard,
+    GrafanaPanel,
+    PanelType,
+    RuleIssue,
+    SLOSpec,
+    SLOType,
+    ValidationResult,
 )
 
 
